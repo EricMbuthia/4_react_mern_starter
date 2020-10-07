@@ -1,0 +1,125 @@
+body{
+    overflow:hidden;
+  }
+  .LandingPage {
+    position: relative;
+    text-align: center;
+    display: grid;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* align-content: space-around; */
+    grid-template-columns: 1fr minmax(auto, 200px) 1fr;
+      /* grid-template-rows: 100px auto; */
+      /* grid-row-gap: 10px; */
+      grid-column-gap: 10px;
+    
+  }
+  
+  .BotDesign{
+    position: fixed;
+      bottom: 32px;
+      top: initial;
+      right: 32px;
+      left: initial;
+      width: 350px;
+      height: 520px;
+      z-index: 999;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .Separator{
+    /* position:relative; */
+    
+    grid-column: 2;
+   /* flex-grow: 1;  */
+   display: grid;
+   grid-template-rows: 130px auto;
+  width: 200px;
+  height:520px;
+  margin-bottom: 100px;
+  padding: 20px;
+  }
+  /* .ClearMyDiv{
+  overflow: hidden;
+  height: 100%;
+  } */
+  .LandingPageHeading{
+    
+    position: fixed;
+    bottom: initial;
+    top: 32px;
+    right: initial;
+    left: 32px;
+    width: 350px;
+    height: 520px;
+    z-index: 999;
+  
+  }
+  
+  /* .NavBubble{
+  animation: gZmgDU 0.3s ease forwards;
+  background: #EF6C00;
+  border-radius: 18px 18px 18px 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  max-width: 50%;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  position: relative;
+  padding: 12px;
+  
+  transform: scale(0);
+  
+  transform-origin: bottom left;
+  } */
+  .speech-bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: 250px;
+    width: 100%;
+    height: 20%;
+    
+    }
+    
+    .speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 56px solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -28px;
+    margin-bottom: -56px;
+    }
+  
+  
+  
+  .BotImage{
+    width:100%;
+    height: 100%;
+  }
+  .LandingPage-header {
+    background-color: #282c34; 
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .LandingPage a {
+    color: #61dafb;
+  }
+  

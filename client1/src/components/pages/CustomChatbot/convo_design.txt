@@ -1,0 +1,77 @@
+
+
+const steps =[
+    {
+      id: 'hello-world',
+      message: "Hi there! You are welcome!",
+      trigger: "start_convo",
+    },
+    {
+      id:'start_convo',
+      component: "Lets Begin with your Bio",
+      //waitAction:true,
+      trigger :'ask_name'
+
+    },
+  
+    {
+      id:'ask_name',
+      message: "What is your full bio",
+      trigger: 'get_name'
+     },
+     {
+         id: 'get_name',
+         user: true,
+         trigger: 'thank_for_name'
+     }
+     {
+         id: 'thank_for_name',
+         message:"Great! Thanks for that  {previousName}!, 
+         trigger: "ask_age"
+     }
+     {
+         id:"ask_age",
+         message: "What is your age",
+         trigger: 'talk_education'
+     }
+     {
+      id:'talk_education',
+      message: "Sweet Lets Fill Out your Educatuion",
+      trigger: "choose_education"
+     }
+     {
+       id: 'choose_eduction'
+       options:  [{ value: 1, label: 'Bachelors', trigger: 'fuction' },
+          { value: 2, label: 'Masters', trigger: 'function' },
+          { value: 3, label: 'PhD', trigger: 'function' },
+           { value: 3, label: 'Post Doctoral', trigger: 'function' },
+          ]
+          ,
+     }
+     {
+       id: 'specify_field_of_studies'
+       message: 'You are a star. Now tell me what was your field of your field studies?'
+       trigger: 'field_of_studies'
+     }
+     {
+       id: 'field_of_studies'
+       options:  [{ value: 1, label: 'Frontend Programmer', trigger: 'fuction' },
+          { value: 2, label: 'Backend Programmer', trigger: 'function' },
+          { value: 3, label: 'Full Stack Programmer', trigger: 'function' },
+           { value: 3, label: 'Networking', trigger: 'function' },
+          ]
+          ,
+     }
+     {
+       id: 'specify_
+     }
+     {
+       id: 'speciality'
+       options:  [{ value: 1, label: 'Bachelors', trigger: 'fuction' },
+          { value: 2, label: 'Masters', trigger: 'function' },
+          { value: 3, label: 'PhD', trigger: 'function' },
+           { value: 3, label: 'Post Doctoral', trigger: 'function' },
+          ]
+          ,
+     }
+  ] ;

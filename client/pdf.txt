@@ -1,0 +1,11 @@
+/* Generate PDF */
+https://medium.com/@shivekkhurana/how-to-create-pdfs-from-react-components-client-side-solution-7f506d9dfa6d
+https://pspdfkit.com/blog/2019/create-pdfs-with-react/
+
+https://dev.to/finallynero/generating-pdf-documents-in-react-using-react-pdf-4ka7
+https://www.npmjs.com/package/html2canvas
+
+
+/* Show PDF that has been Generated */
+
+https://react-pdf.org/
